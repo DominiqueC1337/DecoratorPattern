@@ -1,11 +1,17 @@
-package org.example.solutions; // DO NOT COPY THIS FOR ONLINE IDE USE
-
-public class TaskOneSolution {
+package org.example.excercises.TaskTwo; // DO NOT COPY THIS FOR ONLINE IDE USE
+// https://www.online-java.com/
+// https://www.jdoodle.com/online-java-compiler
+class Main{
     public static void main(String[] args) {
 
         Pizza pizza = new CheeseDecorator(new CheeseDecorator(new MargaritaPizza()));
+        pizza = wrapWithCheeseDecorator(pizza);
         System.out.println(pizza.decoratePizza());
         System.out.println("The pizza costs " + pizza.decorateCost() + "€");
+    }
+
+    public static Pizza wrapWithCheeseDecorator(Pizza pizza) {
+        return new CheeseDecorator(pizza);
     }
 }
 
@@ -15,7 +21,7 @@ interface Pizza{
     public int decorateCost();
 }
 
-class MargaritaPizza implements Pizza{
+class MargaritaPizza implements Pizza {
     public String decoratePizza(){
         return "You've made a Margarita Pizza";
     }
@@ -25,7 +31,7 @@ class MargaritaPizza implements Pizza{
     }
 }
 
-abstract class PizzaDecorator implements Pizza{
+abstract class PizzaDecorator implements Pizza {
     Pizza pizza;
 
     public PizzaDecorator(Pizza pizza) {
@@ -56,4 +62,7 @@ class CheeseDecorator extends PizzaDecorator {
         return super.decorateCost() + 2;
     }
 }
+
+
+
 

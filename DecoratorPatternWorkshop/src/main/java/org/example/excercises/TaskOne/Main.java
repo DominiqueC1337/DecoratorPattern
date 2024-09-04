@@ -1,8 +1,7 @@
-package org.example.excercises;
-
-import java.sql.SQLOutput;
-
-public class task1 {
+package org.example.excercises.TaskOne; // DO NOT COPY THIS FOR ONLINE IDE USE
+// https://www.online-java.com/
+// https://www.jdoodle.com/online-java-compiler
+class TaskOne {
     public static void main(String[] args) {
 
         Pizza pizza = new CheeseDecorator(new CheeseDecorator(new MargaritaPizza()));
