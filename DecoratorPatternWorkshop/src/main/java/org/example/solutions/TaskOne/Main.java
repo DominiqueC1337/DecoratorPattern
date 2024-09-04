@@ -1,6 +1,6 @@
-package org.example.solutions; // DO NOT COPY THIS FOR ONLINE IDE USE
+package org.example.solutions.TaskOne; // DO NOT COPY THIS FOR ONLINE IDE USE
 
-public class TaskOneSolution {
+public class Main {
     public static void main(String[] args) {
 
         Pizza pizza = new CheeseDecorator(new CheeseDecorator(new MargaritaPizza()));

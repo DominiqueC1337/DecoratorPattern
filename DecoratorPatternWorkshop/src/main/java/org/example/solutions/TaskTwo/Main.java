@@ -1,4 +1,4 @@
-package org.example.excercises.TaskTwo; // DO NOT COPY THIS FOR ONLINE IDE USE
+package org.example.solutions.TaskTwo; // DO NOT COPY THIS FOR ONLINE IDE USE
 
 import java.util.Scanner;
 
