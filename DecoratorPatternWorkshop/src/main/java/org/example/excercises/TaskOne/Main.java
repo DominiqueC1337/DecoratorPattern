@@ -1,6 +1,9 @@
 package org.example.excercises.TaskOne; // DO NOT COPY THIS FOR ONLINE IDE USE
 // https://www.online-java.com/
 // https://www.jdoodle.com/online-java-compiler
+
+// You're running a pizzeria and are using the pizza class to track the toppings and price of the pizza being ordered
+// You only have a basic pizza class but want to use decorators to add the functionality of adding toppings and tracking the price of the pizza
 class TaskOne {
     public static void main(String[] args) {
 

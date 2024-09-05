@@ -6,33 +6,9 @@ import java.util.Scanner;
 // https://www.jdoodle.com/online-java-compiler
 class Main{
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("What kind of Pizza do you want?(Margarita/Hawaii)");
-        String pizzaType = myObj.nextLine();
-        System.out.println("How much cheese do you want to add to your Pizza?(1-10)");
-        int cheeseAmount = Integer.parseInt(myObj.nextLine());
-
-        Pizza pizza = pickPizza(pizzaType);
-        for(int i = 0; i < cheeseAmount; i++){
-            pizza = wrapWithCheeseDecorator(pizza);
-        }
-
-
-        System.out.println(pizza.decoratePizza());
-        System.out.println("The pizza costs " + pizza.decorateCost() + "€");
-    }
-    static Pizza pickPizza(String pizzaType){
-        if(pizzaType.equals("Margarita")){
-            return new MargaritaPizza();
-        }
-        if(pizzaType.equals("Hawaii")){
-            return new HawaiiPizza();
-        }
-        throw new RuntimeException("No valid Pizza name entered");
-    }
-
-    static Pizza wrapWithCheeseDecorator(Pizza pizza) {
-        return new CheeseDecorator(pizza);
+        // Extend the functionality of the result of TaskOne here, you could add more Pizza types or different toppings
+        // Have the targets wrapped dynamically based on user input(can use Scanner as an example)
+        // Add at least 1 method that wraps a target object in a decorator
     }
 }
 
