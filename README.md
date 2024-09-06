@@ -1,4 +1,4 @@
-#Decorator Pattern in Java: Learning and Exercises
+# Decorator Pattern in Java: Learning and Exercises
 
 Welcome to the Decorator Pattern learning repository! This repo is designed to help you understand and implement the Decorator Design Pattern in Java through a set of three hands-on exercises.
 Overview
@@ -10,7 +10,7 @@ Key Concepts
     Concrete Component: The class that implements the base interface and has some basic functionality.
     Decorator: A class that implements the same interface as the concrete component and wraps it to add additional functionality.
 
-#Real-world Analogy
+# Real-world Analogy
 
 Imagine you order a coffee. You can add sugar, milk, or cream to it without changing the fundamental nature of the coffee. In this analogy:
 
